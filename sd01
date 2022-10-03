@@ -298,7 +298,7 @@ class ManinWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.btn_reset.setStyleSheet("color: #fff; font-size: 15px; background-color: #555;")
         self.btn_reset.clicked.connect(self.func_reset)
         
-# +++ vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv        
+# +++ vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv        
         self.startDateTime = QDateTimeEdit()
         today = QDate.currentDate()
         DATETIME_FORMAT = "yyyy-MM-dd hh:mm:ss"
