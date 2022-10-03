@@ -96,7 +96,6 @@ class ManinWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
 
 def add_functions(self):
-    # ×àñû
     self.label.setText(QDateTime.currentDateTime().toString('HH:mm:ss\ndd MM yyyy'))
     self.label.setFont(QtGui.QFont("Capsuula", 40))
     self.label.setStyleSheet("color: #DADDFC;")
