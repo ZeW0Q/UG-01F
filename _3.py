@@ -96,13 +96,12 @@ class ManinWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
 
 def add_functions(self):
-    # Часы
+    # Г—Г Г±Г»
     self.label.setText(QDateTime.currentDateTime().toString('HH:mm:ss\ndd MM yyyy'))
     self.label.setFont(QtGui.QFont("Capsuula", 40))
     self.label.setStyleSheet("color: #DADDFC;")
     self.label.setAlignment(Qt.AlignHCenter)
 
-    # Секундомер --- tab_2
     self.temp = 0
     self.label_2.setText("00:00:00")
     self.label_2.setAlignment(Qt.AlignHCenter)
@@ -161,7 +160,7 @@ def current_index(self, index):
 
 def func_continue(self):
     self.timer.start()
-    self.btn_start.setText('Стоп')
+    self.btn_start.setText('Г‘ГІГ®ГЇ')
     self.btn_start.show()
     self.btn_continue.hide()
     self.btn_reset.hide()
@@ -276,13 +275,11 @@ class ManinWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.working_clock.start()
         
     def add_functions(self):
-        # Часы
         self.label.setText(QDateTime.currentDateTime().toString('HH:mm:ss\ndd MM yyyy'))
         self.label.setFont(QtGui.QFont("Capsuula", 40))
         self.label.setStyleSheet("color: #DADDFC;")
         self.label.setAlignment(Qt.AlignHCenter)
 
-# Секундомер --- tab_2
 #        self.temp = 0
         
         self.label_2.setText("00:00:00")
@@ -365,7 +362,7 @@ class ManinWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         hh, mm = divmod(mm, 60)                                             # !!!
         
         self.label_2.setText(
-            f'{self.d.days} дн. {hh:02} час. {mm:02} мин. {ss:02} сек.'
+            f'{self.d.days} Г¤Г­. {hh:02} Г·Г Г±. {mm:02} Г¬ГЁГ­. {ss:02} Г±ГҐГЄ.'
         )     
 
         self.d = self.d - timedelta(seconds=1)                              # !!!
@@ -382,7 +379,7 @@ class ManinWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             return
     
         self.timer.start()
-        self.btn_start.setText('Стоп')
+        self.btn_start.setText('Г‘ГІГ®ГЇ')
         self.btn_start.show()
         self.btn_continue.hide()
         self.btn_reset.hide()
